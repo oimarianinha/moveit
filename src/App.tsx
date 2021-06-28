@@ -1,5 +1,8 @@
-import { ExperienceBar } from './components/ExperienceBar';
-import './styles/global.css';
+// Componentes, Contextos, Pages e Hooks
+import { ExperienceBar } from "./components/ExperienceBar";
+
+// Folhas de estilo
+import "./styles/global.css";
 
 function App() {
   return (
