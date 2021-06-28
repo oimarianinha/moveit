@@ -1,14 +1,19 @@
-import { useContext } from 'react';
-import { ChallengesContext } from '../contexts/ChallengesContext';
-import styles from '../styles/components/CompleteChallenges.module.css';
+// React
+import { useContext } from "react";
 
-export function CompleteChallenges (){
+// Componentes, Contextos, Pages e Hooks
+import { ChallengesContext } from "../contexts/ChallengesContext";
+
+// Folhas de estilo
+import styles from "../styles/components/CompleteChallenges.module.css";
+
+export function CompleteChallenges() {
   const { challengesCompleted } = useContext(ChallengesContext);
 
-  return(
-    <div className={styles.completedChallengesContaiener}>
+  return (
+    <div className={styles.completedChallengesContainer}>
       <span>Desafios completos</span>
       <span>{challengesCompleted}</span>
     </div>
-  )
+  );
 }
